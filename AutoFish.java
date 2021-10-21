@@ -31,7 +31,6 @@ public class AutoFish extends Module {
 
     public void getFishRod(){
         this.hotBarSlot = -1;
-       // if (AutoFish.mc.player.getHeldItemOffhand().getItem() != Items.FISHING_ROD) {
             int fishrodslot;
             int n = fishrodslot = AutoFish.mc.player.getHeldItemMainhand().getItem() == Items.FISHING_ROD ? AutoFish.mc.player.inventory.currentItem : -1;
             if (fishrodslot == -1) {
