@@ -4,7 +4,6 @@ import me.pvpb0t.b0tware.event.events.PacketEvent;
 import me.pvpb0t.b0tware.features.modules.Module;
 import me.pvpb0t.b0tware.features.setting.Setting;
 import net.minecraft.init.Items;
-import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.network.play.server.SPacketSoundEffect;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -23,10 +22,15 @@ public class AutoFish extends Module {
 
     }
 
+    public int onUpdate(){
+        this.getFishRod();
+        return 0;
+    }
+
     @Override
     public void onEnable() {
         this.hotBarSlot = -1;
-        this.getFishRod();
+        //this.getFishRod();
     }
 
     public void getFishRod(){
