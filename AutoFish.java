@@ -30,7 +30,6 @@ public class AutoFish extends Module {
     @Override
     public void onEnable() {
         this.hotBarSlot = -1;
-        //this.getFishRod();
     }
 
     public void getFishRod(){
